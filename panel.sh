@@ -1,14 +1,21 @@
 #!/data/data/com.termux/files/usr/bin/bash
 # ------------------------------
-# Panel de control TTY - UltraPro16
+# Panel de control TTY - 16UltraPro (dinámico)
 # ------------------------------
-# Requiere que index.js, barrera.js y patch_hibrido.js estén en ~/miapp
 
-cd ~/miapp || { echo "❌ No se encontró ~/miapp"; exit 1; }
+# Detecta automáticamente la ruta base del repo
+BASE_DIR="$HOME/16UltraPro"
+
+if [ ! -d "$BASE_DIR" ]; then
+  echo "❌ No se encontró el directorio $BASE_DIR"
+  exit 1
+fi
+
+cd "$BASE_DIR" || { echo "❌ Error accediendo a $BASE_DIR"; exit 1; }
 
 echo ""
 echo "==============================="
-echo "   🟦 UltraPro16 - Panel TTY 🟦"
+echo "   🟦 16UltraPro - Panel TTY 🟦"
 echo "==============================="
 echo ""
 echo "1️⃣  Iniciar el servidor con métricas y dashboard:"
