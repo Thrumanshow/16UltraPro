@@ -25,6 +25,8 @@ Este repositorio está pensado para entornos Android/Termux, pero puede adaptars
 # Actualizar Termux
 pkg update -y && pkg upgrade -y
 
+```
+
 # Instalar utilidades necesarias
 pkg install -y nodejs git nano curl termux-api
 
@@ -35,3 +37,5 @@ cd 16UltraPro
 # Instalar dependencias Node.js
 npm install
 npm install -g nodemon localtunnel
+
+```
