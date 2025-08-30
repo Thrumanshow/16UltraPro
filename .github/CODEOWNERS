@@ -1,0 +1,4 @@
+# Archivo CODEOWNERS
+# Asigna a @owner como responsable de todos los archivos del repositorio
+
+*   @owner
