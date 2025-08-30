@@ -1,31 +1,37 @@
-# 16UltraPro — Servidor Node.js + barrera.js + Dashboard en tiempo real
+# 16UltraPro
 
-**UltraPro16** es un servidor Node.js optimizado para **Termux en Android**, con:
-
-- `barrera.js` para bloquear acciones y registrar intentos.
-- Alertas en **Slack** (Webhook o Bot Token) y correo **Gmail**.
-- Dashboard en tiempo real con **Socket.IO + Chart.js**.
-- Ejecución automática “one-paste” y en segundo plano (`nohup` o `tmux`).
+**UltraPro16 + barrera.js + Dashboard Web + Slack + Email Alerts**  
+Repositorio de ejemplo para Termux/Node.js que automatiza un servidor de monitoreo con dashboard en tiempo real y notificaciones.
 
 ---
 
-## 🚀 Requisitos
+## 🚀 Descripción
 
-- Termux en Android
-- Node.js ≥ 18
-- npm
-- localtunnel (`npm install -g localtunnel`)
-- Conexión a Internet
-- Credenciales Slack y Gmail (opcional para alertas)
+16UltraPro es un proyecto que combina:
+
+- **Node.js + Express**: Servidor web para monitoreo.  
+- **barrera.js**: Bloqueo y registro de eventos con alertas en Slack.  
+- **Dashboard web**: Visualización de métricas en tiempo real usando Chart.js y Socket.IO.  
+- **Notificaciones**: Slack (Webhook o Bot Token) y Email (Gmail App Password).  
+- **Ejecución persistente**: Compatible con Termux usando `nohup` o multiplexores de terminal como `tmux`.  
+
+Este repositorio está pensado para entornos Android/Termux, pero puede adaptarse a cualquier servidor Linux con Node.js.
 
 ---
 
-## 🛠 Instalación rápida
-
-1. Clona el repo o copia el script de instalación.
-2. Crea `.env` en `~/miapp` con tus credenciales.
-3. Da permisos de ejecución:
+## ⚙️ Instalación rápida en Termux
 
 ```bash
-chmod +x ~/miapp/run16.sh
-chmod +x ~/miapp/panel.sh
+# Actualizar Termux
+pkg update -y && pkg upgrade -y
+
+# Instalar utilidades necesarias
+pkg install -y nodejs git nano curl termux-api
+
+# Clonar repositorio
+git clone https://github.com/<thrumanshow>/16UltraPro.git
+cd 16UltraPro
+
+# Instalar dependencias Node.js
+npm install
+npm install -g nodemon localtunnel
