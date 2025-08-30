@@ -1,0 +1,36 @@
+# --- Node.js ---
+node_modules/
+npm-debug.log
+yarn-error.log
+pnpm-debug.log
+package-lock.json
+yarn.lock
+.pnpm-debug.log
+
+# --- Entornos virtuales y binarios ---
+.env
+*.pyc
+__pycache__/
+env/
+venv/
+.DS_Store
+
+# --- Logs y temporales ---
+*.log
+*.tmp
+*.swp
+*.swo
+
+# --- Termux específicos ---
+# Archivos de caché y de la shell
+.bash_history
+.zsh_history
+.termux/
+*.sock
+
+# --- IDE / Editor ---
+.vscode/
+.idea/
+*.iml
+*.sublime-project
+*.sublime-workspace
