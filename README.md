@@ -1,12 +1,13 @@
 ## 16UltraPro
 
-Automatización ligera y adaptable en entornos móviles (Termux + Node.js + Slack + Email). Proyecto enfocado en pruebas de barrera, notificaciones y despliegue rápido.
+Automatización ligera y adaptable en entornos móviles (Termux + Node.js + Slack + Email).  
+Proyecto enfocado en pruebas de barrera, notificaciones y despliegue rápido.
 
 ---
 
 ## 🚀 Descripción
 
-16UltraPro es un proyecto que combina:
+16UltraPro combina:
 
 - **Node.js + Express**: Servidor web para monitoreo.  
 - **barrera.js**: Bloqueo y registro de eventos con alertas en Slack.  
@@ -24,16 +25,13 @@ Este repositorio está pensado para entornos Android/Termux, pero puede adaptars
 # Actualizar Termux
 pkg update -y && pkg upgrade -y
 
-```
-
 # Instalar utilidades necesarias
 pkg install -y nodejs git nano curl termux-api
 
 # Clonar repositorio
-git clone https://thrumanshow.github.io/16UltraPro/
+git clone https://github.com/thrumanshow/16UltraPro.git
+cd 16UltraPro
 
 # Instalar dependencias Node.js
 npm install
 npm install -g nodemon localtunnel
-
-```
