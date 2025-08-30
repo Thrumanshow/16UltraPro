@@ -1,7 +1,6 @@
-# 16UltraPro
+## 16UltraPro
 
-**UltraPro16 + barrera.js + Dashboard Web + Slack + Email Alerts**  
-Repositorio de ejemplo para Termux/Node.js que automatiza un servidor de monitoreo con dashboard en tiempo real y notificaciones.
+Automatización ligera y adaptable en entornos móviles (Termux + Node.js + Slack + Email). Proyecto enfocado en pruebas de barrera, notificaciones y despliegue rápido.
 
 ---
 
@@ -31,8 +30,7 @@ pkg update -y && pkg upgrade -y
 pkg install -y nodejs git nano curl termux-api
 
 # Clonar repositorio
-git clone https://github.com/<thrumanshow>/16UltraPro.git
-cd 16UltraPro
+git clone https://thrumanshow.github.io/16UltraPro/
 
 # Instalar dependencias Node.js
 npm install
