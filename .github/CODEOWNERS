@@ -1,4 +1,19 @@
-# Archivo CODEOWNERS
-# Asigna a @owner como responsable de todos los archivos del repositorio
+# CODEOWNERS - versión final optimizada
+# Siempre @Thrumanshow o @HormigasAIS estarán como dueños
 
-*   @owner
+# Regla general: todo el repo
+* @Thrumanshow @HormigasAIS
+
+# Archivos específicos
+*.js @js-owner @Thrumanshow @HormigasAIS
+*.go docs@example.com @Thrumanshow @HormigasAIS
+*.txt @HormigasAIS/termuxcats @Thrumanshow
+
+# Directorios específicos
+/build/logs/ @Thrumanshow @HormigasAIS
+/docs/ @Thrumanshow @HormigasAIS
+/docs/* docs@example.com @Thrumanshow @HormigasAIS
+/apps/ @Thrumanshow @HormigasAIS
+/apps/github @Thrumanshow @HormigasAIS
+/scripts/ @docThrumanshow @Thrumanshow @HormigasAIS
+**/logs @Thrumanshow @HormigasAIS
